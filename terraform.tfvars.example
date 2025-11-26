@@ -1,0 +1,10 @@
+aws_region          = "us-east-1"
+my_ip               = "102.88.112.114"
+key_pair_name       = "my-new-keypair"
+bastion_instance_type = "t3.micro"
+web_instance_type     = "t3.micro"
+db_instance_type      = "t3.small"
+
+
+
+
