@@ -185,28 +185,6 @@ resource "aws_route_table_association" "private_assoc_2" {
 # -------------------------------
 # Security Groups
 # -------------------------------
-resource "aws_security_group" "bastion_sg" {
-  name        = "techcorp-bastion-sg"
-  description = "Bastion SG, allow SSH from my IP only"
-  vpc_id      = aws_vpc.techcorp_vpc.id
-
-  ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    cidr_blocks = ["${var.my_ip}/32"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = { Name = "techcorp-bastion-sg" }
-}
-
 resource "aws_security_group" "web_sg" {
   name        = "techcorp-web-sg"
   description = "Web SG, allow HTTP, HTTPS, SSH from bastion"
