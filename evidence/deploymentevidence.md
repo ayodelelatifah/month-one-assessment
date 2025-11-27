@@ -19,6 +19,13 @@
 
 ## SSH access through bastion host
  
- ![EC2 Setup](/evidence/Screenshot%20(636).png "EC2 instance screenshot")
+ ![EC2 Setup](/evidence/Screenshot%20(645).png "EC2 instance screenshot")
 
+## SSH access to the webwerver
+ 
+ ![EC2 Setup](/evidence/Screenshot%20(648).png "EC2 instance screenshot")
+## SSH access to the database
+ ![EC2 Setup](/evidence/Screenshot%20(650).png "EC2 instance screenshot")
 
+ ## Connect to the postgres instance on the DB server
+ ![EC2 Setup](/evidence/Screenshot%20(651).png "EC2 instance screenshot")
